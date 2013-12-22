@@ -31,7 +31,8 @@ if RUBY_VERSION == '1.8.7' && RUBY_PATCHLEVEL == 299
   end
 end
 
-if RUBY_VERSION == '1.9.3' && RUBY_PATCHLEVEL == 448
+if (RUBY_VERSION == '1.9.3' && RUBY_PATCHLEVEL == 448) ||
+   (RUBY_VERSION == '2.0.0' && RUBY_PATCHLEVEL == 247)
   class Tempfile
   
     class Remover
